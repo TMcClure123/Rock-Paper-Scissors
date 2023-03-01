@@ -69,6 +69,13 @@ if (userChoice === computerChoice) {
   
 }
 
+const resetGame = () => {
+userScore = 0;
+computerScore = 0;
+document.getElementById("userScore").innerHTML= userScore;
+document.getElementById("computerScore").innerHTML= computerScore;
+}
+
 function playGame(choice) {
   const userChoice = getUserChoice(choice);
   const computerChoice = getComputerChoice();
