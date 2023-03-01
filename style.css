@@ -4,6 +4,8 @@
 
 .scorefont {
     font-size: 30px;
+    font-family: 'Shojumaru', cursive;
+
 }
 .buttonz{
   --b: 3px;   /* border thickness */

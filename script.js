@@ -37,7 +37,7 @@ if (userChoice === computerChoice) {
   if (userChoice === "rock") {
     if (computerChoice === "paper") {
       computerScore++;
-      document.getElementById('computerSc ore').innerHTML = computerScore;
+      document.getElementById('computerScore').innerHTML = computerScore;
       return document.getElementById("result").innerHTML = "The computer won!";
       //change HTML
     } else if (computerChoice === "scissors") {
