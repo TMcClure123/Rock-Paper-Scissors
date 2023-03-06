@@ -31,7 +31,7 @@ let computerScore = 0;
 
 const determineWinner = (userChoice, computerChoice) => {
 if (userChoice === computerChoice) {
-  return document.getElementById("result").innerHTML = "You tied with the computer!";
+  return document.getElementById("result").innerHTML = "You tied with the computer!"; // all of the follwoing print out the results for the rps game.
 }
 
   if (userChoice === "rock") {
@@ -49,7 +49,7 @@ if (userChoice === computerChoice) {
     if (computerChoice === "rock") {
       userScore++;
       document.getElementById('userScore').innerHTML = userScore;
-      return document.getElementById("result").innerHTML = "You won!";
+      return document.getElementById("result").innerHTML = "You won!"; 
     } else if (computerChoice === "scissors") {
       computerScore++;
       document.getElementById('computerScore').innerHTML = computerScore;
@@ -73,7 +73,7 @@ const resetGame = () => {
 userScore = 0;
 computerScore = 0;
 document.getElementById("userScore").innerHTML= userScore;
-document.getElementById("computerScore").innerHTML= computerScore;
+document.getElementById("computerScore").innerHTML= computerScore; //this resets the score to 0
 }
 
 function playGame(choice) {
@@ -81,5 +81,5 @@ function playGame(choice) {
   const computerChoice = getComputerChoice();
   console.log("User choice is: " + userChoice);
   console.log("Computer choice is: " + computerChoice);
-  console.log(determineWinner(userChoice, computerChoice));
+  console.log(determineWinner(userChoice, computerChoice)); // this function runs the game and prints the choices
 };
